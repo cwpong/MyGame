@@ -1,0 +1,8 @@
+{"list":[
+{"_t":"PlayerNumericConfig","_id":1000,"Name":"物理攻击"},
+{"_t":"PlayerNumericConfig","_id":1001,"Name":"法术攻击"},
+{"_t":"PlayerNumericConfig","_id":1002,"Name":"物理防御"},
+{"_t":"PlayerNumericConfig","_id":1003,"Name":"法术防御"},
+{"_t":"PlayerNumericConfig","_id":1004,"Name":"速度"},
+{"_t":"PlayerNumericConfig","_id":1005,"Name":"气血"},
+]}

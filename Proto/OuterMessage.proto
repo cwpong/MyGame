@@ -1,0 +1,663 @@
+syntax = "proto3";
+package ET;
+
+//ResponseType M2C_TestResponse
+message C2M_TestRequest // IActorLocationRequest
+{
+	int32 RpcId = 90;
+	string request = 1;
+}
+
+message M2C_TestResponse // IActorLocationResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	string response = 1;
+}
+
+//ResponseType Actor_TransferResponse
+message Actor_TransferRequest // IActorLocationRequest
+{
+	int32 RpcId = 90;
+	int32 MapIndex = 1;
+}
+
+message Actor_TransferResponse // IActorLocationResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+}
+
+//ResponseType G2C_EnterMap
+message C2G_EnterMap // IRequest
+{
+	int32 RpcId = 1;
+}
+
+message G2C_EnterMap // IResponse
+{
+	int32 RpcId = 1;
+	int32 Error = 2;
+	string Message = 3;
+	// 自己unitId
+	int64 MyId = 4;
+}
+
+message MoveInfo
+{
+	repeated float X = 1;
+	repeated float Y = 2;
+	repeated float Z = 3;
+
+	float A = 4;
+	float B = 5;
+	float C = 6;
+	float W = 7;
+	int32 TurnSpeed = 8;
+}
+
+message UnitInfo
+{
+	int64 UnitId = 1;
+	int32 ConfigId = 2;
+	int32 Type = 3;
+	float X = 4;
+	float Y = 5;
+	float Z = 6;
+	float ForwardX = 7;
+	float ForwardY = 8;
+	float ForwardZ = 9;
+	repeated int32 Ks = 10;
+	repeated int64 Vs = 11;
+	MoveInfo MoveInfo = 12;
+}
+
+message M2C_CreateUnits // IActorMessage
+{
+	repeated UnitInfo Units = 2;
+}
+
+message M2C_CreateMyUnit // IActorMessage
+{
+	UnitInfo Unit = 1;
+}
+
+message M2C_StartSceneChange // IActorMessage
+{
+	int64 SceneInstanceId = 1;
+	string SceneName = 2;	
+}
+
+message M2C_RemoveUnits // IActorMessage
+{
+	repeated int64 Units = 2;
+}
+
+message C2M_PathfindingResult // IActorLocationMessage
+{
+	int32 RpcId = 90;
+
+	float X = 1;
+	float Y = 2;
+	float Z = 3;
+}
+
+message C2M_Stop // IActorLocationMessage
+{
+	int32 RpcId = 90;
+}
+
+message M2C_PathfindingResult // IActorMessage
+{
+	int64 Id = 1;
+
+	float X = 2;
+	float Y = 3;
+	float Z = 4;
+
+	repeated float Xs = 5;
+	repeated float Ys = 6;
+	repeated float Zs = 7;
+}
+
+message M2C_Stop // IActorMessage
+{
+	int32 Error = 1;
+
+	int64 Id = 2;
+	float X = 3;
+	float Y = 4;
+	float Z = 5;
+
+	float A = 6;
+	float B = 7;
+	float C = 8;
+	float W = 9;
+}
+
+//ResponseType G2C_Ping
+message C2G_Ping // IRequest
+{
+	int32 RpcId = 90;
+}
+
+message G2C_Ping // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+
+	int64 Time = 1;
+}
+
+
+message G2C_Test // IMessage
+{
+}
+
+//ResponseType M2C_Reload
+message C2M_Reload // IRequest
+{
+	int32 RpcId = 90;
+	string Account = 1;
+	string Password = 2;
+}
+
+message M2C_Reload // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+}
+
+//ResponseType R2C_Login
+message C2R_Login // IRequest
+{
+	int32 RpcId = 90;
+	string  Account = 1;  // 帐号
+	string  Password = 2;  // 密码
+}
+
+message R2C_Login // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	string Address = 1;
+	int64 Key = 2;
+	int64 GateId = 3;
+}
+
+//ResponseType G2C_LoginGate
+message C2G_LoginGate // IRequest
+{
+	int32 RpcId = 90;
+	int64 Key = 1;  // 帐号
+	int64 GateId = 2;
+}
+
+message G2C_LoginGate // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	int64 PlayerId = 1;
+}
+
+message G2C_TestHotfixMessage // IMessage
+{
+	string Info = 1;
+}
+
+//ResponseType M2C_TestRobotCase
+message C2M_TestRobotCase // IActorLocationRequest
+{
+	int32 RpcId = 90;
+	int32 N = 1;
+}
+
+message M2C_TestRobotCase // IActorLocationResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	int32 N = 1;
+}
+
+//ResponseType M2C_TransferMap
+message C2M_TransferMap // IActorLocationRequest
+{
+	int32 RpcId = 1;
+}
+
+message M2C_TransferMap // IActorLocationResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+}
+ 
+//ResponseType A2C_LoginAccount
+message C2A_LoginAccount // IRequest
+{
+	int32 RpcId = 90;
+	string AccountName = 1;
+	string Password = 2;
+}
+
+message A2C_LoginAccount // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	string Token = 1;
+	int64 AccountId = 2;
+}
+
+//ResponseType C2A_GetServerInfos
+message A2C_Disconnect // IMessage
+{
+	int32 Error = 1;
+}
+
+message ServerInfoProto
+{
+	int32 Id = 1;
+	int32 Status = 2;
+	string ServerName = 3;
+}
+
+//ResponseType A2C_GetServerInfos
+message C2A_GetServerInfos // IRequest
+{
+	int32 RpcId = 90;
+	string Token = 1;
+	int64 AccountId = 2;
+}
+
+message A2C_GetServerInfos // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	repeated ServerInfoProto ServerInfosList = 1;
+}
+
+message RoleInfoProto
+{
+	int64 Id = 1;
+	string Name = 2;
+	int32 State = 3;
+	int64 AccountId = 4;
+	int64 LastLoginTime = 5;
+	int64 CreateTime = 6;
+	int32 SeverId = 7;
+	int64 RoleId = 8;
+	int32 RoleLv = 9;
+	int64 RoleExp = 10;
+	int64 PhysicalAttack = 11;
+	int64 SpellAttack = 12;
+	int64 PhysicalDefense = 13;
+	int64 SpellDefense = 14;
+	int64 Speed = 15;
+	int64 MaxHp = 16;
+}
+
+//ResponseType A2C_CreateRole
+message C2A_CreateRole // IRequest
+{
+	int32 RpcId = 90;
+	string Token = 1;
+	int64 AccountId = 2;
+	string Name = 3;
+	int32 ServerId = 4;
+}
+
+message A2C_CreateRole // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	RoleInfoProto RoleInfo = 1;
+}
+
+//ResponseType A2C_GetRoles
+message C2A_GetRoles // IRequest
+{
+	int32 RpcId = 90;
+	string Token = 1;
+	int64 Account = 2;
+	int32 ServerId = 3;
+}
+
+message A2C_GetRoles // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	repeated RoleInfoProto RoleInfo = 1;
+}
+
+//ResponseType A2C_DeleteRole
+message C2A_DeleteRole // IRequest
+{
+	int32 RpcId = 90;
+	string Token = 1;
+	int64 AccountId = 2;
+	int64 RoleInfoId = 3;
+	int32 ServerId = 4;
+}
+
+message A2C_DeleteRole // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	int64 DeletedRoleInfoId = 1;
+}
+
+//ResponseType A2C_GetRealmKey
+message C2A_GetRealmKey // IRequest
+{
+	int32 RpcId = 90;
+	string Token = 1;
+	int32 ServerId = 2;
+	int64 AccountId = 3;
+}
+
+message A2C_GetRealmKey // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	string Realmkey = 1;
+	string RealmAddress = 2;
+}
+
+//ResponseType R2C_LoginRealm
+message C2R_LoginRealm // IRequest
+{
+	int32 RpcId = 90;
+	int64 AccountId = 1;
+	string RealmTokenKey = 2;
+}
+
+message R2C_LoginRealm // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	string GateSessionKey = 1;
+	string GateAddress = 2;
+}
+
+//ResponseType G2C_LoginGameGate
+message C2G_LoginGameGate // IRequest
+{
+	int32 RpcId = 90;
+	string Key = 1;
+	int64 RoleId = 2;
+	int64 Account = 3;
+}
+
+message G2C_LoginGameGate // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	int64 PlayerId = 1; // 游戏客户端在网关映射的ID
+}
+
+//ResponseType G2C_EnterGame
+message C2G_EnterGame // IRequest
+{
+	int32 RpcId = 1;
+}
+
+message G2C_EnterGame // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+
+	int64 MyId = 4; // Unit 角色ID
+}
+
+message M2C_NoticeUnitNumeric // IActorMessage
+{
+
+	int64 Unit = 1;
+	int32 NumericType = 2;
+	int64 NewValue = 3;
+}
+
+message ItemInfo
+{
+	int64 ItemUid = 1;
+	int32 ItemConfigId = 2;
+	int32 ItemQuality = 3;
+
+	EquipInfoProto EquipInfo = 4;
+}
+
+message AttributeEntryProto
+{
+	int64 Id = 1;
+	int32 Key = 2;
+	int64 Value = 3;
+	int32 EntryType = 4;
+}
+
+message EquipInfoProto
+{
+	int64 Id    = 1;
+	int32 Score = 2;
+	repeated AttributeEntryProto AttributeEntryProtoList = 3;
+}
+
+// 物品更新信息
+message M2C_ItemUpdateOpInfo // IActorMessage
+{
+
+	int32 RpcId = 90;
+	ItemInfo ItemInfo = 1;
+	int32 Op = 2;
+	int32 ItemOwner = 3;
+}
+
+message M2C_AllItemsList // IActorMessage
+{
+	int32 RpcId = 90;
+	repeated ItemInfo ItemInfoList = 1;
+	int32 ItemOwner = 2;
+}
+
+//ResponseType M2C_SellItem
+message C2M_SellItem // IActorLocationRequest
+{
+	int32 RpcId = 1;
+	int64 ItemUid = 2;
+}
+
+message M2C_SellItem // IActorLocationResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+}
+
+//ResponseType M2C_EquipItem
+message C2M_EquipItem // IActorLocationRequest
+{
+	int32 RpcId = 1;
+	int64 ItemUid = 2;
+}
+
+message M2C_EquipItem // IActorLocationResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+}
+
+//ResponseType M2C_UnloadEquipItem
+message C2M_UnloadEquipItem // IActorLocationRequest
+{
+	int32 RpcId = 1;
+	int32 EquipPosition = 2;
+}
+
+message M2C_UnloadEquipItem // IActorLocationResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+}
+
+
+/// ------------------------------------ 协议测试 ----------------------------//
+
+message C2M_TestCreateItem // IActorLocationMessage
+{
+	int32 RpcId = 1;
+}
+
+message C2M_TestStartBattle // IActorLocationMessage
+{
+	int32 RpcId = 1;
+}
+
+/// --------------------------------------Rank服--------RankHelper--------------------//
+
+message RankInfoProto
+{
+	int64 Id      = 1;
+	int64 UnitId  = 2;
+	string Name   = 3;
+	int32  Lv  = 4;
+}
+
+//ResponseType Rank2C_GetRanksInfo
+message C2Rank_GetRanksInfo // IActorRankInfoRequest
+{
+	int32 RpcId        = 1;
+}
+
+
+message Rank2C_GetRanksInfo // IActorRankInfoResponse
+{
+	int32 RpcId    = 90;
+	int32 Error    = 91;
+	string Message = 92;
+	repeated RankInfoProto RankInfoProtoList = 1;
+}
+
+//ResponseType M2C_CreateBattle
+message C2M_CreateBattle // IActorLocationRequest
+{
+	int32 RpcId        = 1;
+}
+
+message M2C_CreateBattle // IActorLocationResponse
+{
+	int32 RpcId    = 90;
+	int32 Error    = 91;
+	string Message = 92;
+
+	repeated UnitInfo Fighters = 1;
+}
+
+//ResponseType M2C_GetBattleRecord
+message C2M_GetBattleRecord // IActorLocationRequest
+{
+	int32 RpcId        = 1;
+}
+
+// 一次出手引造成的伤害记录
+message M2C_GetBattleRecord // IActorLocationResponse
+{
+	int32 RpcId    = 90;
+	int32 Error    = 91;
+	string Message = 92;
+
+	repeated OneBattleRecord OneBattleRecords = 1;
+}
+
+message OneBattleRecord
+{
+	int64 Attacker = 1;
+	int32 SkillId = 2;
+	int32 CurRound = 3;
+	repeated BattleEffectTarget Targets = 4;
+}
+
+message BattleEffectTarget 
+{
+	int64 Target = 1; // 技能影响的目标
+
+	// 由于技能导致的数值变化
+	BattlePhysicalAttackChange BattlePhysicalAttackChangeBySkill = 2;
+	BattlePhysicalDefenseChange BattlePhysicalDefenseChangeBySkill = 3;
+	BattleSpellAttackChange BattleSpellAttackChangeBySkill = 4;
+	BattleSpellDefenseChange BattleSpellDefenseChangeBySkill = 5;
+	BattleSpeedChange BattleSpeedChangeBySkill = 6;
+	BattleHpChange BattleHpChangeBySkill = 7;
+
+	// 状态变更
+	StateChange StateChange = 8; // 状态变更
+	BattlePhysicalAttackChange BattlePhysicalAttackChangeByState = 9;
+	BattlePhysicalDefenseChange BattlePhysicalDefenseChangeByState = 10;
+	BattleSpellAttackChange BattleSpellAttackChangeByState = 11;
+	BattleSpellDefenseChange BattleSpellDefenseChangeByState = 12;
+	BattleSpeedChange BattleSpeedChangeByState = 13;
+	BattleHpChange BattleHpChangeByState = 14;
+}
+
+// 造成的跟物理攻击有关的变化
+message BattlePhysicalAttackChange
+{
+	int32 ChangeType = 1; // 变化的类型
+	int32 Value = 2;	  // 变化的数值	
+}
+
+// 造成的跟物理防御有关的变化
+message BattlePhysicalDefenseChange
+{
+	int32 ChangeType = 1; // 变化的类型
+	int32 Value = 2;	  // 变化的数值	
+}
+
+// 造成的跟法术攻击有关的变化
+message BattleSpellAttackChange
+{
+	int32 ChangeType = 1; // 变化的类型
+	int32 Value = 2;	  // 变化的数值	
+}
+
+// 造成的跟法术防御有关的变化
+message BattleSpellDefenseChange
+{
+	int32 ChangeType = 1; // 变化的类型
+	int32 Value = 2;	  // 变化的数值	
+}
+
+// 造成的跟速度有关的变化
+message BattleSpeedChange
+{
+	int32 ChangeType = 1; // 变化的类型
+	int32 Value = 2;	  // 变化的数值	
+}
+
+// 造成的跟气血有关的变化
+message BattleHpChange
+{
+	int32 ChangeType = 1; // 变化的类型
+	int32 Value = 2;	  // 变化的数值	
+}
+
+message StateChange
+{
+	int32 StateId = 1; // 状态的目标
+}

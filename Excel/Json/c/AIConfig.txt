@@ -1,0 +1,8 @@
+{"list":[
+{"_t":"AIConfig","_id":1001,"AIConfigId":1,"Order":1,"Name":"AI_BattleOver","NodeParams":[]},
+{"_t":"AIConfig","_id":1002,"AIConfigId":1,"Order":2,"Name":"AI_FighterAction","NodeParams":[]},
+{"_t":"AIConfig","_id":2001,"AIConfigId":2,"Order":1,"Name":"AI_SkillCheck","NodeParams":[]},
+{"_t":"AIConfig","_id":2002,"AIConfigId":2,"Order":2,"Name":"AI_CollectTarget","NodeParams":[]},
+{"_t":"AIConfig","_id":2003,"AIConfigId":2,"Order":3,"Name":"AI_UseSkill","NodeParams":[]},
+{"_t":"AIConfig","_id":2004,"AIConfigId":2,"Order":4,"Name":"AI_SkillEnd","NodeParams":[]},
+]}

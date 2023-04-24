@@ -1,0 +1,160 @@
+
+hero_0103.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bixi
+  rotate: false
+  xy: 616, 578
+  size: 234, 439
+  orig: 234, 439
+  offset: 0, 0
+  index: -1
+doufa111
+  rotate: false
+  xy: 1023, 578
+  size: 63, 64
+  orig: 63, 65
+  offset: 0, 1
+  index: -1
+doufa222
+  rotate: false
+  xy: 1112, 511
+  size: 58, 66
+  orig: 58, 66
+  offset: 0, 0
+  index: -1
+hou shoubi
+  rotate: false
+  xy: 1292, 800
+  size: 67, 99
+  orig: 67, 99
+  offset: 0, 0
+  index: -1
+houbai 01
+  rotate: false
+  xy: 754, 295
+  size: 356, 281
+  orig: 356, 281
+  offset: 0, 0
+  index: -1
+houbai 02
+  rotate: true
+  xy: 1268, 901
+  size: 116, 95
+  orig: 116, 95
+  offset: 0, 0
+  index: -1
+houbai 03
+  rotate: false
+  xy: 867, 20
+  size: 412, 273
+  orig: 412, 273
+  offset: 0, 0
+  index: -1
+jianjia
+  rotate: true
+  xy: 1207, 802
+  size: 88, 83
+  orig: 88, 83
+  offset: 0, 0
+  index: -1
+lingpai
+  rotate: true
+  xy: 1142, 655
+  size: 140, 52
+  orig: 140, 52
+  offset: 0, 0
+  index: -1
+liusu
+  rotate: false
+  xy: 1196, 661
+  size: 95, 134
+  orig: 95, 134
+  offset: 0, 0
+  index: -1
+piaodai
+  rotate: true
+  xy: 946, 584
+  size: 179, 75
+  orig: 179, 75
+  offset: 0, 0
+  index: -1
+qian shoubi
+  rotate: true
+  xy: 852, 765
+  size: 252, 132
+  orig: 252, 132
+  offset: 0, 0
+  index: -1
+shangshen
+  rotate: false
+  xy: 616, 291
+  size: 136, 285
+  orig: 136, 285
+  offset: 0, 0
+  index: -1
+toufa 01
+  rotate: false
+  xy: 1088, 579
+  size: 109, 63
+  orig: 109, 63
+  offset: 0, 0
+  index: -1
+toufa 03
+  rotate: true
+  xy: 1023, 644
+  size: 151, 117
+  orig: 151, 117
+  offset: 0, 0
+  index: -1
+toufa 04
+  rotate: true
+  xy: 754, 268
+  size: 25, 61
+  orig: 25, 61
+  offset: 0, 0
+  index: -1
+toufa02
+  rotate: false
+  xy: 986, 797
+  size: 219, 220
+  orig: 219, 220
+  offset: 0, 0
+  index: -1
+toux
+  rotate: false
+  xy: 852, 583
+  size: 92, 180
+  orig: 92, 180
+  offset: 0, 0
+  index: -1
+tufa 05
+  rotate: true
+  xy: 1207, 892
+  size: 125, 59
+  orig: 125, 59
+  offset: 0, 0
+  index: -1
+wuqi
+  rotate: false
+  xy: 2, 267
+  size: 612, 750
+  orig: 612, 750
+  offset: 0, 0
+  index: -1
+you tui
+  rotate: true
+  xy: 2, 2
+  size: 263, 522
+  orig: 263, 522
+  offset: 0, 0
+  index: -1
+zuo tui
+  rotate: true
+  xy: 526, 7
+  size: 258, 339
+  orig: 258, 339
+  offset: 0, 0
+  index: -1

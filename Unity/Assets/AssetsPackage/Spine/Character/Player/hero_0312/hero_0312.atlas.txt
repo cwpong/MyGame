@@ -1,0 +1,160 @@
+
+hero_0312.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bianzi
+  rotate: false
+  xy: 493, 206
+  size: 174, 332
+  orig: 174, 332
+  offset: 0, 0
+  index: -1
+bianzi2
+  rotate: false
+  xy: 1268, 309
+  size: 159, 366
+  orig: 159, 366
+  offset: 0, 0
+  index: -1
+erhuan
+  rotate: false
+  xy: 1341, 1518
+  size: 28, 36
+  orig: 28, 36
+  offset: 0, 0
+  index: -1
+fazan
+  rotate: false
+  xy: 395, 145
+  size: 272, 59
+  orig: 272, 59
+  offset: 0, 0
+  index: -1
+gong
+  rotate: false
+  xy: 2, 1624
+  size: 1373, 415
+  orig: 1462, 724
+  offset: 89, 127
+  index: -1
+langshen
+  rotate: true
+  xy: 2, 826
+  size: 796, 699
+  orig: 891, 699
+  offset: 95, 0
+  index: -1
+langtou
+  rotate: false
+  xy: 2, 251
+  size: 489, 573
+  orig: 489, 573
+  offset: 0, 0
+  index: -1
+lanshensheng
+  rotate: false
+  xy: 493, 540
+  size: 206, 284
+  orig: 206, 284
+  offset: 0, 0
+  index: -1
+liuhai
+  rotate: false
+  xy: 1429, 326
+  size: 198, 119
+  orig: 217, 119
+  offset: 0, 0
+  index: -1
+liuhai2
+  rotate: false
+  xy: 1341, 1556
+  size: 31, 66
+  orig: 31, 66
+  offset: 0, 0
+  index: -1
+mawei
+  rotate: true
+  xy: 703, 1002
+  size: 620, 332
+  orig: 630, 332
+  offset: 10, 0
+  index: -1
+piaodai
+  rotate: false
+  xy: 1377, 1474
+  size: 525, 565
+  orig: 585, 565
+  offset: 0, 0
+  index: -1
+piaodai2
+  rotate: false
+  xy: 1341, 1026
+  size: 545, 446
+  orig: 545, 446
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: false
+  xy: 701, 392
+  size: 409, 283
+  orig: 409, 293
+  offset: 0, 10
+  index: -1
+tou
+  rotate: true
+  xy: 1037, 1007
+  size: 144, 178
+  orig: 144, 178
+  offset: 0, 0
+  index: -1
+tuigu
+  rotate: false
+  xy: 669, 152
+  size: 441, 238
+  orig: 441, 238
+  offset: 0, 0
+  index: -1
+tuipiaodai
+  rotate: false
+  xy: 2, 2
+  size: 391, 247
+  orig: 391, 279
+  offset: 0, 32
+  index: -1
+youshou
+  rotate: true
+  xy: 1429, 463
+  size: 212, 116
+  orig: 212, 127
+  offset: 0, 0
+  index: -1
+youtui
+  rotate: true
+  xy: 1037, 1153
+  size: 469, 302
+  orig: 545, 331
+  offset: 76, 0
+  index: -1
+zhuazi
+  rotate: true
+  xy: 1608, 447
+  size: 577, 237
+  orig: 577, 237
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: true
+  xy: 1112, 212
+  size: 463, 154
+  orig: 463, 154
+  offset: 0, 0
+  index: -1
+zuotui
+  rotate: true
+  xy: 703, 677
+  size: 323, 903
+  orig: 398, 903
+  offset: 0, 0
+  index: -1

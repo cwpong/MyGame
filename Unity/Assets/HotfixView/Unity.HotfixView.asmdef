@@ -1,0 +1,22 @@
+{
+    "name": "Unity.HotfixView",
+    "rootNamespace": "ET",
+    "references": [
+        "Unity.Model",
+        "Unity.Hotfix",
+        "Unity.ModelView",
+        "Unity.TextMeshPro",
+        "YooAsset",
+        "Unity.ThirdParty",
+        "Unity.Mono"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

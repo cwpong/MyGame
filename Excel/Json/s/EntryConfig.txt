@@ -1,0 +1,8 @@
+{"list":[
+{"_t":"EntryConfig","_id":1,"AttributeType":1000,"AttributeMinValue":15,"AttributeMaxValue":20},
+{"_t":"EntryConfig","_id":2,"AttributeType":1001,"AttributeMinValue":12,"AttributeMaxValue":16},
+{"_t":"EntryConfig","_id":3,"AttributeType":1002,"AttributeMinValue":8,"AttributeMaxValue":10},
+{"_t":"EntryConfig","_id":4,"AttributeType":1003,"AttributeMinValue":6,"AttributeMaxValue":8},
+{"_t":"EntryConfig","_id":5,"AttributeType":1004,"AttributeMinValue":1,"AttributeMaxValue":2},
+{"_t":"EntryConfig","_id":6,"AttributeType":1005,"AttributeMinValue":30,"AttributeMaxValue":40},
+]}

@@ -1,0 +1,74 @@
+ManifestFileVersion: 0
+CRC: 3711005136
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: dlglobby.unity3d
+      Dependencies: {}
+    Info_1:
+      Name: item_test.unity3d
+      Dependencies: {}
+    Info_2:
+      Name: config.unity3d
+      Dependencies: {}
+    Info_3:
+      Name: map2.unity3d
+      Dependencies: {}
+    Info_4:
+      Name: map1.unity3d
+      Dependencies: {}
+    Info_5:
+      Name: esreuseui.unity3d
+      Dependencies: {}
+    Info_6:
+      Name: unit.unity3d
+      Dependencies:
+        Dependency_0: role_main.unity3d
+    Info_7:
+      Name: dlglogin.unity3d
+      Dependencies: {}
+    Info_8:
+      Name: uihelp.unity3d
+      Dependencies: {}
+    Info_9:
+      Name: dlghelper.unity3d
+      Dependencies: {}
+    Info_10:
+      Name: item_servertest.unity3d
+      Dependencies: {}
+    Info_11:
+      Name: reddot.unity3d
+      Dependencies: {}
+    Info_12:
+      Name: dlgreddot.unity3d
+      Dependencies: {}
+    Info_13:
+      Name: common.unity3d
+      Dependencies: {}
+    Info_14:
+      Name: code.unity3d
+      Dependencies: {}
+    Info_15:
+      Name: item_server.unity3d
+      Dependencies: {}
+    Info_16:
+      Name: dlgserver.unity3d
+      Dependencies: {}
+    Info_17:
+      Name: item_role.unity3d
+      Dependencies: {}
+    Info_18:
+      Name: dlgroles.unity3d
+      Dependencies: {}
+    Info_19:
+      Name: game.unity3d
+      Dependencies: {}
+    Info_20:
+      Name: dlgmain.unity3d
+      Dependencies: {}
+    Info_21:
+      Name: role_main.unity3d
+      Dependencies: {}
+    Info_22:
+      Name: dlgpatch.unity3d
+      Dependencies: {}

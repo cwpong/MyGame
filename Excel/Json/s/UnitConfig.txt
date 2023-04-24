@@ -1,0 +1,12 @@
+{"list":[
+{"_t":"UnitConfig","_id":1001,"Type":1,"Name":"英雄1","Desc":"英雄1","MaxHP":0,"DamageValue":0},
+{"_t":"UnitConfig","_id":1002,"Type":1,"Name":"英雄2","Desc":"英雄2","MaxHP":100,"DamageValue":10},
+{"_t":"UnitConfig","_id":1003,"Type":1,"Name":"英雄3","Desc":"英雄3","MaxHP":200,"DamageValue":20},
+{"_t":"UnitConfig","_id":1004,"Type":1,"Name":"英雄4","Desc":"英雄4","MaxHP":300,"DamageValue":30},
+{"_t":"UnitConfig","_id":1005,"Type":1,"Name":"英雄5","Desc":"英雄5","MaxHP":400,"DamageValue":40},
+{"_t":"UnitConfig","_id":2001,"Type":2,"Name":"敌人1","Desc":"敌人1","MaxHP":500,"DamageValue":50},
+{"_t":"UnitConfig","_id":2002,"Type":2,"Name":"敌人2","Desc":"敌人2","MaxHP":600,"DamageValue":60},
+{"_t":"UnitConfig","_id":2003,"Type":2,"Name":"敌人3","Desc":"敌人3","MaxHP":700,"DamageValue":70},
+{"_t":"UnitConfig","_id":2004,"Type":2,"Name":"敌人4","Desc":"敌人4","MaxHP":800,"DamageValue":80},
+{"_t":"UnitConfig","_id":2005,"Type":2,"Name":"敌人5","Desc":"敌人5","MaxHP":900,"DamageValue":90},
+]}

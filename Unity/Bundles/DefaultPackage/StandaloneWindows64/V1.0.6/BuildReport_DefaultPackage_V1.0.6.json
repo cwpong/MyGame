@@ -1,0 +1,52 @@
+{
+    "Summary": {
+        "YooVersion": "1.3.7",
+        "UnityVersion": "2021.3.20f1c1",
+        "BuildDate": "2023/4/9 19:47:42",
+        "BuildSeconds": 5,
+        "BuildTarget": 19,
+        "BuildPipeline": 0,
+        "BuildMode": 0,
+        "BuildPackageName": "DefaultPackage",
+        "BuildPackageVersion": "V1.0.6",
+        "EnableAddressable": false,
+        "UniqueBundleName": false,
+        "EncryptionServicesClassName": "null",
+        "OutputNameStyle": 1,
+        "CompressOption": 2,
+        "DisableWriteTypeTree": false,
+        "IgnoreTypeTreeChanges": true,
+        "AssetFileTotalCount": 1,
+        "MainAssetTotalCount": 1,
+        "AllBundleTotalCount": 1,
+        "AllBundleTotalSize": 1979297,
+        "EncryptedBundleTotalCount": 0,
+        "EncryptedBundleTotalSize": 0,
+        "RawBundleTotalCount": 0,
+        "RawBundleTotalSize": 0
+    },
+    "AssetInfos": [
+        {
+            "Address": "",
+            "AssetPath": "Assets/AssetsPackage/UI/LoginBg.jpg",
+            "AssetGUID": "1c1ca7fde7e174f4fab170149968e195",
+            "AssetTags": [],
+            "MainBundleName": "assets_assetspackage_ui.bundle",
+            "MainBundleSize": 1979297,
+            "DependBundles": [],
+            "DependAssets": []
+        }
+    ],
+    "BundleInfos": [
+        {
+            "BundleName": "assets_assetspackage_ui.bundle",
+            "FileName": "a3bcf38817f0f12e1db08bf1f713c4fa",
+            "FileHash": "a3bcf38817f0f12e1db08bf1f713c4fa",
+            "FileCRC": "d94c917a",
+            "FileSize": 1979297,
+            "IsRawFile": false,
+            "LoadMethod": 0,
+            "Tags": []
+        }
+    ]
+}
